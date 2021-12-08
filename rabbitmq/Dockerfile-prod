@@ -1,0 +1,10 @@
+#FROM rabbitmq:3.9.7-management-alpine
+FROM rabbitmq:3.9.7-alpine
+
+COPY ./rabbitmq.conf /etc/rabbitmq
+
+RUN chown rabbitmq:rabbitmq /etc/rabbitmq/rabbitmq.conf
+
+USER 1001
+
+CMD ["rabbitmq-server"]

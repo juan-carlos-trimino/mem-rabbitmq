@@ -1,0 +1,14 @@
+# Ignore everything.
+**
+
+# But include these files...
+!.gitignore
+!LICENSE
+!README.md
+
+# ... and these files under the 'rabbitmq' directory...
+!rabbitmq/
+rabbitmq/*
+!rabbitmq/.dockerignore
+!rabbitmq/Dockerfile-prod
+!rabbitmq/rabbitmq.conf
